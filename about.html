@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="style1.css">
+     <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  position:  inherit;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+  </head>
+  <body>
+    <h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/my.jpg" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Utkarsh Chakravarty</h1>
+      <br>
+      <p>Web Developer and Designer</p>
+      <br>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div>
+    <div class="text1">
+      <h1>ABOUT ME</h1>
+      </div>
+      <div class="text2">
+      <ol>
+    <li>Name: UTKARSH CHAKRAVARTY</li>
+    <li>Branch: Computer Science and Engineering</li>
+      </ol>
+      <br>
+    <p>I personally believe that I'm the jack of all languages but the master of none. I am from Computer Science engineering and presently in first year of engineering. During my first semester I had participated in coding events of various IITs and also achieved good positions there. Through this I had learned how to work and co-ordinate in a team and how to manage things. From the beginning of my engineering I had great interest in software only and I had put in a great effort to learn coding in java and android in Lucknow. It is my firm belief I am fit for the project you are offering. It will further help in improving my skills which will be very beneficial for my career. The projects will also give me an exposure to the work routine in software world which will motivate me further to perform and prepare for my job. I also assure you that I will put in all my hard work and will work with full devotion the tasks which are provided to me and won't let this opportunity go futile. I hope you show confidence in me and give this opportunity for my betterment.</p>
+</div>
+
+  </body>
+  </html>
